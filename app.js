@@ -19,15 +19,15 @@ mongoose
   app.use(bodyParser.json());
 
 
-// app.get("/", (req, res) => {
-//   const user = new User({
-//     handle: 'jim',
-//     email: 'jim@jim.com',
-//     password: "password"
-//   })
-//   user.save()
-//   res.send("Hello World from mern twitter");
-// });
+app.get("/", (req, res) => {
+  const user = new User({
+    handle: 'jim',
+    email: 'jim@jim.com',
+    password: "password"
+  })
+  user.save()
+  res.send("Hello World from mern twitter");
+});
 
 // const passport = require('passport');
 app.use(passport.initialize());

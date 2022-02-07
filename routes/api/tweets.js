@@ -4,7 +4,7 @@ const passport = require('passport');
 const validateTweetInput = require('../../validation/tweets');
 const Tweet = require('../../models/Tweet');
 
-router.get("/test", (req, res) => res.json({ msg: "This is the teweets route" }));
+// router.get("/test", (req, res) => res.json({ msg: "This is the teweets route" }));
 
 
 router.post('/',
@@ -24,5 +24,5 @@ router.post('/',
       newTweet.save().then(tweet => res.json(tweet));
     }
   );
-  
+
 module.exports = router;
